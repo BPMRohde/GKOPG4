@@ -3,10 +3,12 @@ const app = express()
 const port = 8000
 
 app.get('/', (req, res) => {
-  setTimeout(() => {
-    res.send('Jeg er server' + port);
-  }, "2000");
+
+  for (let i = 0; i <= 5000000000; i++) {
+    count += i;
+  }
   
+  res.send('Jeg er server' + port);
 })
 
 app.listen(port, () => {
