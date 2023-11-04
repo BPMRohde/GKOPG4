@@ -3,7 +3,9 @@ const app = express()
 const port = 8002
 
 app.get('/', (req, res) => {
-  res.send('Jeg er server' + port);
+  setTimeout(() => {
+    res.send('Jeg er server' + port);
+  }, "2000");
   
 })
 
