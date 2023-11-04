@@ -4,7 +4,7 @@ const port = 8002
 
 app.get('/', (req, res) => {
   let count = 0;
-  for (let i = 0; i <= 5000000000; i++) {
+  for (let i = 0; i <= 3000000000; i++) {
     count += i;
   }
   
